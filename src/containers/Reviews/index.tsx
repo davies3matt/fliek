@@ -4,17 +4,17 @@ import Header from '../../components/Header';
 import Images from '../../themes/Images';
 import styled from 'styled-components';
 
-const {backgroundMid} = Images;
+const {backgroundAlt} = Images;
 
 const PageWrap = styled.div`
-  background-image: url(${backgroundMid});
+  background-image: url(${backgroundAlt});
   background-size: cover;
   background-position: center;
   display: flex;
 `;
 
 
-const AboutPage: React.FC<any> = ({history}) => {
+const ReviewPage: React.FC<any> = ({history}) => {
 
     const {state} = history.location;
     if (state && state.reloadPage) {
@@ -27,7 +27,7 @@ const AboutPage: React.FC<any> = ({history}) => {
             <Box w="100%" h="100vh">
                 <Header/>
                 <Box p={4} color="black">
-                <Text>About Page</Text>
+                <Text>Reviews</Text>
 
                 </Box>
             </Box>
@@ -36,4 +36,4 @@ const AboutPage: React.FC<any> = ({history}) => {
     );
 };
 
-export default AboutPage;
+export default ReviewPage;

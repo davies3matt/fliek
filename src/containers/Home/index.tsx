@@ -1,6 +1,17 @@
 import React, { Fragment } from 'react';
 import Header from '../../components/Header';
-import {Box, Center} from '@chakra-ui/react';
+import {Box, Center, Text, Image} from '@chakra-ui/react';
+import Images from '../../themes/Images';
+import styled from 'styled-components';
+
+const {background} = Images;
+
+const PageWrap = styled.div`
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center;
+  display: flex;
+`;
 
 const HomePage: React.FunctionComponent<any> = ({ history}) => {
 
@@ -10,12 +21,15 @@ const HomePage: React.FunctionComponent<any> = ({ history}) => {
   }
   return (
     <Fragment>
-      <Header/>
-      <Box bg="teal" w="100%" h="100vh"  p={4} color="white">
-        <Center>
-         <h1>Home Page</h1>
-        </Center>
+      <PageWrap>
+      <Box w="100%" h="100vh">
+        <Header/>
+        <Box p={4} color="black">
+          <Text>Home Page</Text>
+
+        </Box>
       </Box>
+      </PageWrap>
     </Fragment>
   )
 }

@@ -11,6 +11,11 @@ const AsyncAbout = Loadable({
   loading: Loading,
 });
 
+const AsyncReview = Loadable({
+  loader: () => import('../containers/Reviews'),
+  loading: Loading,
+});
+
 
 const PublicRoutes = [
   {
@@ -23,6 +28,13 @@ const PublicRoutes = [
     title: 'About',
     path: '/about',
     component: AsyncAbout,
+    exact: true,
+  }
+  ,
+  {
+    title: 'Review',
+    path: '/review',
+    component: AsyncReview,
     exact: true,
   }
 ]
