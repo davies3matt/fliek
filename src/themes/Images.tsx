@@ -3,6 +3,7 @@ import kongZilla from '../assets/Images/king-kong-v-godzilla.png';
 import background from '../assets/Images/cool-background.png';
 import backgroundAlt from '../assets/Images/cool-backgroundAlt.png';
 import backgroundMid from '../assets/Images/cool-backgroundMid.png';
+import wallaceAndGromit from '../assets/Images/wallace-and-gromit-were-rabbit.jpeg';
 
 
 const Images = {
@@ -10,7 +11,8 @@ const Images = {
     kongZilla,
     background,
     backgroundAlt,
-    backgroundMid
+    backgroundMid,
+    wallaceAndGromit
 };
 
 export default Images;
