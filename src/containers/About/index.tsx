@@ -1,18 +1,7 @@
 import React, { Fragment } from 'react';
 import {Box, Text} from '@chakra-ui/react';
 import Header from '../../components/Header';
-import Images from '../../themes/Images';
-import styled from 'styled-components';
-
-const {backgroundMid} = Images;
-
-const PageWrap = styled.div`
-  background-image: url(${backgroundMid});
-  background-size: cover;
-  background-position: center;
-  display: flex;
-`;
-
+import {PageWrap} from './styles';
 
 const AboutPage: React.FC<any> = ({history}) => {
 
