@@ -16,6 +16,10 @@ const AsyncReview = Loadable({
   loading: Loading,
 });
 
+const AsyncLogin = Loadable({
+  loader: () => import('../containers/Authentication/login'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -29,12 +33,17 @@ const PublicRoutes = [
     path: '/about',
     component: AsyncAbout,
     exact: true,
-  }
-  ,
+  },
   {
     title: 'Review',
     path: '/review',
     component: AsyncReview,
+    exact: true,
+  },
+  {
+    title: 'Login',
+    path: '/login',
+    component:  AsyncLogin,
     exact: true,
   }
 ]
